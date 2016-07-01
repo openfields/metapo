@@ -39,3 +39,13 @@ dmat[608,] <- dat
 dmat*(-1/1000) -> dmat2
 exp(dmat2) -> M.mat
 eigen(M.mat,symmetric = TRUE, only.values = TRUE) -> M.eig
+max(M.eig$values)
+
+# create figure
+source('~/Documents/metapo/R/metc.r')
+
+seq(100,8000,by=100) -> threshs
+cbind(threshs,rep(NA,80))->thresh.mc
+for(i in 1:80){
+  thresh.mc[i,2] <- metc(dmat,thresh.mc[i,1])
+}

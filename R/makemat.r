@@ -14,13 +14,13 @@ makemat <- function(dtable, n_eles){
     dat <- c(dists[1:(i-1)],0,dists[i:607]) 
     dmat[i,]<-dat
   }
-  # penultimate row
-  # i <- i + 1
-  # which(pdata$from_cat==i) -> tmp
-  # pdata[tmp,4] -> dists
-  # dat <- c(dists[1:606],0,dists[607])
-  # dmat[i,] <- dat
-  # i <- i + 1
+  #penultimate row
+  i <- i + 1
+  which(pdata$from_cat==i) -> tmp
+  pdata[tmp,4] -> dists
+  dat <- c(dists[1:606],0,dists[607])
+  dmat[i,] <- dat
+  i <- i + 1
   # 
   # # final row
   # which(pdata$from_cat==i) -> tmp

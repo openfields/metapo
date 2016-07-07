@@ -23,11 +23,11 @@ makemat <- function(dtable, n_eles){
   i <- i + 1
   # 
   # # final row
-  # which(pdata$from_cat==i) -> tmp
-  # pdata[tmp,4] -> dists
-  # dat <- c(dists,0)
-  # dmat[i,] <- dat
-  # 
-  # return(dmat)
-  # 
+  which(pdata$from_cat==i) -> tmp
+  pdata[tmp,4] -> dists
+  dat <- c(dists,0)
+  dmat[i,] <- dat
+
+  return(dmat)
+  
 }

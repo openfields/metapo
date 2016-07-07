@@ -11,14 +11,14 @@ makemat <- function(dtable, n_eles){
   for(i in 2:(n_eles-2)){
     which(dtable$from_cat==i) -> tmp # index of 607 elements
     dtable[tmp,4] -> dists # 607 pairwise distances
-    dat <- c(dists[1:(i-1)],0,dists[i:607]) 
+    dat <- c(dists[1:(i-1)],0,dists[i:(n_eles-1)]) 
     dmat[i,]<-dat
   }
   #penultimate row
   i <- i + 1
   which(dtable$from_cat==i) -> tmp
   dtable[tmp,4] -> dists
-  dat <- c(dists[1:606],0,dists[607])
+  dat <- c(dists[1:(n_eles-2)],0,dists[(n_eles-1)])
   dmat[i,] <- dat
   i <- i + 1
   # 

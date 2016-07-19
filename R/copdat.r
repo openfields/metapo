@@ -11,14 +11,14 @@ copdat <- function(nam, r){
   return(out)
 }
 
-nam
-copdat(nam, c(23,24,25,26,27,28,29,30,31,32)) -> st.st
-class(st.st)
-st.st <- as.data.frame(st.st)
-names(st.st) <- c("mag", "maxst", "tots", "totl", "freq1", "dd", "bif_r", "len_r", "ar_r", "sl_r")
-
-cbind(mc.south, st.st)->mc.st
-is.na(mc.st$bif_r) -> di
-
-mc.s <- mc.st[-13,]
-qplot(y=mc.s[,2], x=mc.s$len_r, col=mc.s$mag)
+# nam
+# copdat(nam, c(23,24,25,26,27,28,29,30,31,32)) -> st.st
+# class(st.st)
+# st.st <- as.data.frame(st.st)
+# names(st.st) <- c("mag", "maxst", "tots", "totl", "freq1", "dd", "bif_r", "len_r", "ar_r", "sl_r")
+# 
+# cbind(mc.south, st.st)->mc.st
+# is.na(mc.st$bif_r) -> di
+# 
+# mc.s <- mc.st[-13,]
+# qplot(y=mc.s[,2], x=mc.s$len_r, col=mc.s$mag)

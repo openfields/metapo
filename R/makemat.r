@@ -1,5 +1,9 @@
-makemat <- function(dtable, n_eles){
+makemat <- function(dtable){
   # function to create distance matrix from data table and number of sites
+  
+  # 
+  table(dtable$from_cat) -> foo
+  dim(foo) -> n_eles
   
   # create matrix
   matrix(-1, nrow=n_eles, ncol=n_eles) -> dmat

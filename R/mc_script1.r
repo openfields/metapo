@@ -1,7 +1,7 @@
 source('./R/metc.r')
 
 library(shapefiles)
-read.dbf('./gis/a42vd_2ha.dbf') -> a42e
+read.dbf('F:/Regional Networks/a42vd_2ha.dbf') -> a42e
 cbind(a42e$dbf$x, a42e$dbf$y) -> cs
 dist(cs, diag=FALSE, upper=TRUE) -> a42e.dists
 as.matrix(a42e.dists)  -> a42e.d

@@ -21,3 +21,13 @@ wcs <- cbind(a42nwi$dbf$x, a42nwi$dbf$y)
 dist(wcs, diag=FALSE, upper=TRUE) -> nwi.dists
 as.matrix(nwi.dists) -> nwi.d
 system.time(metc(nwi.d, 1500))
+
+# new way with arpack library, 5/24/18
+source('./R/mcarp.r')
+library(shapefiles)
+read.dbf('F:/Regional Networks/a42vd_2ha.dbf') -> a42e
+cbind(a42e$dbf$x, a42e$dbf$y) -> cs
+dist(cs, diag=FALSE, upper=TRUE) -> a42e.dists
+as.matrix(a42e.dists)  -> a42e.d
+system.time(metarpack(a42e.d, 1000) -> a42e.1k)
+system.time(metarpack(a42e.d, 5000) -> a42e.5k)

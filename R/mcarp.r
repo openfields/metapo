@@ -1,4 +1,4 @@
-metarpack <- function(dmat, alpha){
+mcarp <- function(dmat, alpha){
   # calculate metapopulation capacity
   # input: distance matrix, alpha
   # returns metapopulation capacity

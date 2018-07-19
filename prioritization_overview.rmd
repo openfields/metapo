@@ -1,0 +1,77 @@
+---
+title: "Prioritization Overview"
+author: "Will Fields"
+date: "July 19, 2018"
+output: html_document
+---
+
+1. Joint Base Lewis-McChord/Camp Rilea (9 species)
+-Grassland/Herbaceous (71): streaked horned lark (unknown dispersal), Taylor's checkerspot (0.1 km), Roy Prairie pocket gopher (0.01 km), Oregon silverspot (8 km max)
+-Emergent Herbaceous Wetlands (95): Oregon spotted frog (0.5 km), water howellia (0.0001 km)
+-Evergreen Forest (42): northern spotted owl (23 km)
+-Riverine: bull trout (100 km), chinook salmon (1500 km)
+
+
+2. Fort Bliss/White Sands (9 species)
+Grassland/Herbaceous (71): northern aplomado falcon (unknown dispersal)
+Evergreen Forest (42): Todsen's pennyroyal (0.0001 km), gray wolf (200 km, exp pop, so exclude), jaguar (30 km)
+Deciduous Forest (41): yellow-billed cuckoo (500 km???) - secondary habitat listed was shrub/scrub - what about Woody Wetlands?
+Barren Land (31): Sneed's pincushion cactus (0.04 km), least tern (26 km) - exclude on basis of being migrant?
+Woody Wetlands (90): southwestern willow flycatcher (16 km)
+"Riparian": New Mexico meadow jumping mouse (0.05 km, but Trainor et al. 2012 J Mamm reported ~80m x 80m home range for preblei) - consider woody wetlands?
+
+
+3. Fort Carson/Pinon Canyon (2 species)
+Evergreen Forest (42):  Mexican spotted owl (22 km)
+Grassland/Herbaceous (71): black-footed ferret (10 km)
+
+
+4. Fort Hood/Camp Bowie/Camp Bullis/Camp Swift (3 species)
+Emergent Herbaceous Wetlands (95): whooping crane (19 km) - exclude because migrant
+Shrub/Scrub (52): black-capped vireo  (3.6 km)
+Deciduous Forest (41): golden-cheeked warbler (0.2 km) - should be Evergreen Forest? ~2.4 km from 2010 status review
+
+
+5. Fort Campbell (3 species)
+Mixed Forest (43): gray bat (92 km), Indiana bat (55-80 km)
+Deciduous Forest (41)/Evergreen Forest (42)/Mixed Forest (43)/Woody Wetlands (90): northern long-eared bat (100 km)
+
+
+6. Fort Irwin/NTC (2 species)
+Shrub/Scrub (52): desert tortoise (5 km), Lane Mountain milk-vetch (0.04 km)
+
+
+7. Fort Stewart (7 species)
+Evergreen Forest (42): eastern indigo snake (4.8 km), red-cockaded woodpecker (5 km)
+Grassland/Herbaceous (52): smooth coneflower (0.001)
+Riverine: Atlantic sturgeon (1500 km), shortnose sturgeon (1000 km)
+Emergent Herbaceous Wetlands (95): wood stork (unknown) - exclude because no breeding colonies?
+Woody Wetlands (90): frosted flatwoods salamander (0.45 km) - or PFO4 from NWI??
+
+
+8. Fort Drum (2 species)
+Mixed Forest (43):  Indiana bat (55-80 km)
+Deciduous Forest (41)/Evergreen Forest (42)/Mixed Forest (43)/Woody Wetlands (90): northern long-eared bat (100 km)
+
+
+9. Fort Polk (3 species)
+Evergreen Forest (42): red-cockaded woodpecker (5 km), Louisiana pine snake (.163 km)
+Deciduous Forest (41)/Evergreen Forest (42)/Mixed Forest (43)/Woody Wetlands (90): northern long-eared bat (100 km)
+
+
+10. Fort Riley (4 species)
+Barren Land (31): piping plover (1 km), least tern (26 km) - both migrants?
+Deciduous Forest (41)/Evergreen Forest (42)/Mixed Forest (43)/Woody Wetlands (90): northern long-eared bat (100 km)
+Riverine: Topeka shiner (10 km)
+
+
+11. Fort Benning (5 species)
+Evergreen Forest (42): red-cockaded woodpecker (5 km), relict trillium (0.002), American alligator??? (10 km)
+Emergent Herbaceous Wetlands (95): wood stork (unknown)
+Deciduous Forest (41)/Evergreen Forest (42)/Mixed Forest (43)/Woody Wetlands (90): northern long-eared bat (100 km)
+
+
+
+
+
+

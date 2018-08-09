@@ -6,7 +6,7 @@ library(rgrass7)
 
 # read vector data in - need to get data and check that it's either centroid or straight up polygon, whichever is needed
 readVECT("huach_65r42_5") -> huach_65r42_5
-readVECT("huach_65r41_5") -> huach_65r41_5
+readVECT("huach_65r41_5") -> huach_65r41_5  # decid network for ocelot only has 2 patches > 5 ha, won't work, need to run again with 
 readVECT("huach_65r43_5") -> huach_65r43_5
 readVECT("huach_65r71_5") -> huach_65r71_5
 

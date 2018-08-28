@@ -1,8 +1,8 @@
 instmc <- function(dds, mnames, onames){
   # function to calculate metapopulation metrics for species on an installation
   # source mcmap, load rgrass7
-  source("C:/Users/u4cnnwrf/Documents/Regional Networks/metapo/R/mcmap.r")
-  require(rgrass7)
+  source("C:/Users/u4cnnwrf/Documents/Regional Networks/metapo/R/mcmapcsv.r")
+  #require(rgrass7)
 
     for(i in 1:length(mnames)){
       # call mcmap

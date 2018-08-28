@@ -7,7 +7,7 @@ instmc <- function(dds, mnames, onames){
     for(i in 1:length(mnames)){
       # call mcmap
       #system.time(mcmap(dd=dds[i], vname=mnames[i]) -> paste(onames[i]))
-      assign(onames[i], value=mcmap(dd=dds[i], vname=mnames[i]), envir = .GlobalEnv)
+      assign(onames[i], value=mcmapcsv(dd=dds[i], vname=mnames[i]), envir = .GlobalEnv)
     }
 
 }

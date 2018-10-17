@@ -22,8 +22,8 @@ gapscore <- function(gmat){
   tot/(sum(gmat[,2])*4) -> relscore
   return(relscore)
 }
-
-a <- c(1,2,3,4,NA)
-b <- c(1,1,1,1,1)
-cbind(a,b) -> gmat
-gapscore(gmat)
+# 
+# a <- c(1,2,3,4,NA)
+# b <- c(1,1,1,1,1)
+# cbind(a,b) -> gmat
+# gapscore(gmat)

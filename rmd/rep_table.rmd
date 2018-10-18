@@ -1,0 +1,141 @@
+---
+title: "table"
+author: "Will Fields"
+date: "October 18, 2018"
+output: word_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+```{r}
+library(dplyr)
+# df <- mtcars %>%
+#     mutate(make_model = row.names(mtcars)) %>%
+#     filter(cyl == 4) %>%
+#     select(make_model, mpg, wt) %>%
+#     mutate(wt = wt*1000) %>%
+#     arrange(make_model)
+
+library(knitr)
+# kable(df)
+options(digits=0)
+
+# library(pander)
+# panderOptions('digits', 0)
+# panderOptions('round',0)
+# panderOptions('keep.trailing.zeros', FALSE)
+```
+
+```{r, echo=FALSE}
+read.csv('./data/net_own/allen_p41424390_m.csv', header=TRUE) -> allen41424390
+read.csv('./data/net_own/benruc_p42_m.csv', header=TRUE) -> benruc42
+read.csv('./data/net_own/benruc_p90_m.csv', header=TRUE) -> benruc90
+read.csv('./data/net_own/benruc_p41424390_m.csv', header=TRUE) -> benruc41424390
+read.csv('./data/net_own/bland_p42_m.csv', header = TRUE) -> bland42
+read.csv('./data/net_own/bland_p52_m.csv', header = TRUE) -> bland52
+read.csv('./data/net_own/bland_p95_m.csv', header = TRUE) -> bland95
+read.csv('./data/net_own/blws_p31_m.csv', header = TRUE) -> blws31
+read.csv('./data/net_own/blws_p41_m.csv', header = TRUE) -> blws41
+read.csv('./data/net_own/blws_p42_m.csv', header = TRUE) -> blws42
+read.csv('./data/net_own/blws_p71_m.csv', header = TRUE) -> blws71
+read.csv('./data/net_own/catmer_p41_m.csv', header=TRUE) -> catmer41
+read.csv('./data/net_own/catmer_p43_m.csv', header= TRUE) -> catmer43
+read.csv('./data/net_own/catmer_p41424390_m.csv', header = TRUE) -> catmer41424390
+read.csv('./data/net_own/catt_p414390_m.csv', header = TRUE) -> catt414390
+read.csv('./data/net_own/catt_p41424390_m.csv', header = TRUE) -> catt41424390
+read.csv('./data/net_own/cdaw_p41_m.csv', header = TRUE) -> cdaw41
+read.csv('./data/net_own/cdaw_p41424390_m.csv', header = TRUE) -> cdaw41424390
+read.csv('./data/net_own/cdaw_p414390_m.csv', header = TRUE) -> cdaw414390
+read.csv('./data/net_own/ced_p41424390_m.csv', header = TRUE) -> ced41424390
+read.csv('./data/net_own/cmp414271_m.csv', header = TRUE) -> cmp414271
+read.csv('./data/net_own/cnav_p42_m.csv', header = TRUE) -> cnav42
+read.csv('./data/net_own/cust_p41424390_m.csv', header = TRUE) -> cust41424390
+read.csv('./data/net_own/cwdp_p52_m.csv', header = TRUE) -> cwdp52
+read.csv('./data/net_own/dix_p41424390_m.csv', header = TRUE) -> dix41424390
+read.csv('./data/net_own/fb_p42_m.csv', header = TRUE) -> fb42
+read.csv('./data/net_own/fb_p41424390_m.csv', header = TRUE) -> fb41424390
+read.csv('./data/net_own/fc_p43_m.csv', header = TRUE) -> fc43
+read.csv('./data/net_own/fc_p4142390_m.csv', header = TRUE) -> fc41424390
+read.csv('./data/net_own/fccg_p31_m.csv', header = TRUE) -> fccg31
+read.csv('./data/net_own/fccg_p41424390_m.csv', header = TRUE) -> fccg41424390
+read.csv('./data/net_own/fccg_p414271_m.csv', header = TRUE) -> fccg414271
+read.csv('./data/net_own/fcpc_p42_m.csv', header = TRUE) -> fcpc42
+read.csv('./data/net_own/fd_p414390_m.csv', header = TRUE) -> fd414390
+read.csv('./data/net_own/fd_p41424390_m.csv', header = TRUE) -> fd41424390
+read.csv('./data/net_own/fhctx_p41_m.csv', header = TRUE) -> fh41
+read.csv('./data/net_own/fhctx_p52_m.csv', header = TRUE) -> fh51
+read.csv('./data/net_own/figab_p41424390_m.csv', header = TRUE) -> figab41424390
+read.csv('./data/net_own/flwo_p41424390_m.csv', header = TRUE) -> flwo41424390
+read.csv('./data/net_own/flwo_p414390_m.csv', header = TRUE) -> flwo414390
+read.csv('./data/net_own/flwo_p43_m.csv', header = TRUE) -> flwo43
+read.csv('./data/net_own/fp_p41424390_m.csv', header = TRUE) -> fp41424390
+read.csv('./data/net_own/fp_p42_m.csv', header = TRUE) -> fp42
+read.csv('./data/net_own/fril_p41424390_m.csv', header = TRUE) -> fril41424390
+read.csv('./data/net_own/fs_p42_m.csv', header = TRUE) -> fs42
+read.csv('./data/net_own/fs_p71_m.csv', header = TRUE) -> fs71
+read.csv('./data/net_own/fs_p95_m.csv', header = TRUE) -> fs95
+read.csv('./data/net_own/fva_p41_m.csv', header = TRUE) -> fva41
+read.csv('./data/net_own/fva_p42_m.csv', header = TRUE) -> fva42
+read.csv('./data/net_own/fva_p41424390_m.csv', header = TRUE) -> fva41424390
+read.csv('./data/net_own/gorjac_p41424390_m.csv', header = TRUE) -> gorjac41424390
+read.csv('./data/net_own/gorjac_p42_m.csv', header = TRUE) -> gorjac42
+read.csv('./data/net_own/gorjac_p43_m.csv', header = TRUE) -> gorjac43
+read.csv('./data/net_own/gorjac_p71_m.csv', header = TRUE) -> gorjac71
+read.csv('./data/net_own/graf_p41424390_m.csv', header = TRUE) -> graf41424390
+read.csv('./data/net_own/gray_p42_m.csv', header = TRUE) -> gray42
+read.csv('./data/net_own/gray_p414242390_m.csv', header = TRUE) -> gray41424390
+read.csv('./data/net_own/hlcrslo_p43_m.csv', header = TRUE) -> hlcrslo43
+read.csv('./data/net_own/hlcrslo_p52_m.csv', header = TRUE) -> hlcrslo52
+read.csv('./data/net_own/hlcrslo_p71_m.csv', header = TRUE) -> hlcrslo71
+read.csv('./data/net_own/huach_p41_m.csv', header = TRUE) -> huach41
+read.csv('./data/net_own/huach_p42_m.csv', header = TRUE) -> huach42
+read.csv('./data/net_own/huach_p43_m.csv', header = TRUE) -> huach43
+read.csv('./data/net_own/huach_p71_m.csv', header = TRUE) -> huach71
+read.csv('./data/net_own/knox_p41424390_m.csv', header = TRUE) -> knox41424390
+read.csv('./data/net_own/knox_p414390_m.csv', header = TRUE) -> knox414390
+read.csv('./data/net_own/knox_p43_m.csv', header = TRUE) -> knox43
+read.csv('./data/net_own/macon_p414390_m.csv', header = TRUE) -> macon414390
+read.csv('./data/net_own/mccoy_p4142390_m.csv', header = TRUE) -> mccoy41424390
+read.csv('./data/net_own/mccoy_p43_m.csv', header = TRUE) -> mccoy43
+read.csv('./data/net_own/mccoy_p71_m.csv', header = TRUE) -> mccoy71
+read.csv('./data/net_own/mta_p71_m.csv', header=TRUE) -> mta71
+read.csv('./data/net_own/mta_p41424390_m.csv', header = TRUE) -> mta41424390
+read.csv('./data/net_own/rave_p41424390_m.csv', header = TRUE) -> rave41424390
+read.csv('./data/net_own/rip_p42_m.csv', header = TRUE) -> rip42
+read.csv('./data/net_own/rip_p41424390_m.csv', header = TRUE) -> rip41424390
+read.csv('./data/net_own/shel_p42_m.csv', header = TRUE) -> shel42
+read.csv('./data/net_own/sill_p52_m.csv', header = TRUE) -> sill52
+read.csv('./data/net_own/west_p41424390_m.csv', header = TRUE) -> west_p41424390
+read.csv('./data/net_own/west_p414390_m.csv', header = TRUE) -> west414390
+```
+
+```{r, echo=FALSE}
+cm41.c <- rep('catmer41', dim(catmer41)[1])
+cbind(cm41.c,catmer41) -> catmer41.c
+
+cm43.c <- rep('catmer43', dim(catmer43)[1])
+cbind(cm43.c, catmer43) -> catmer43.c
+names(catmer41.c) <- c('net', 'own', 'area')
+names(catmer43.c) <- c('net', 'own', 'area')
+
+
+
+
+
+
+
+
+
+
+rbind(catmer41.c, catmer43.c) -> dat
+dat$area <- dat$area/10000
+
+library(reshape)
+cast(dat, net ~ own) -> cast1
+```
+
+```{r, echo=FALSE}
+kable(cast1)
+
+```

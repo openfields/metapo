@@ -23,15 +23,15 @@ names(ea_b.gap) <- c('net', 'gap', 'area')
 c("allen65r_pad41424390", "benruc_pad90", "benruc_pad42", "benruc_pad41424390", "bland_pad52", "bland_pad95", "bland_pad42", "blws_pad31", "blws_pad41",
   "blws_pad71", "catmer_pad43", "catmer_pad41", "catmer_pad41424390", "catt_pad41424390", "catt_pad414390", "cdaw_pad414390", "cdaw_pad41", "cdaw_pad41424390",
 "ced_pad41424390", "cnav_pad42", "cust_pad41424390", "cwdp_pad52", "dix_pad41424390", "fb_pad42", "fb_pad41424390", "fccg_pad414271", "fccg_pad41424390",
-"fccg_pad31", "fcpc_pad42", "fd_pad414390", "fd_pad41424390", "gray_pad42", "gray_pad414242390", "hlcrslo_pad71", "hlcrslo_pad52", "hlcrslo_pad43",
-"jblmcr_pad71", "jblmcr_pad42", "knox_pad43", "knox_pad414390", "knox_pad41424390", "macon_pad414390", "west_pad414390")
+"fccg_pad31", "fcpc_pad42", "fd_pad414390", "fd_pad41424390", "gray_pad42", "gray_pad41424390", "hlcrslo_pad71", "hlcrslo_pad52", "hlcrslo_pad43", "jblmcr_pad71", "jblmcr_pad42", "knox_pad43", "knox_pad414390", 
+"knox_pad41424390", "macon_pad414390", "west_pad414390") -> tmp
 
 # read in database tables
-for(i in 1:length(tmp)){
+system.time(for(i in 1:length(tmp)){
   assign(paste(tmp[i]), dbReadTable(gcon, paste(tmp[i])))
-  which(paste(tmp[i]))
-  }
+  }) # 56 sec, desktop
 
+# 43 nets read in, need to select proper records, then get crosstab of gap status
 
 
 # write to csv and fix NA's

@@ -39,7 +39,7 @@ netgap(anbat) -> anbat.g
 cbind(rep('anbat', dim(anbat.g)[1]), anbat.g) -> anbat.gap
 names(anbat.gap) <- c('net', 'gap', 'area')
 anbat.gap
-anbat.gap <- c(1,2,3,4,4)
+anbat.gap$gap <- c(1,2,3,4,4)
 
 # "benruc_pad90", 
 which(benruc_pad90$b_cat>=0) -> i.br90
@@ -51,12 +51,13 @@ br90.gap
 br90.gap$gap <- c(1,2,3,4,4)
 
 # "benruc_pad42", 
-which(benruc_pad90$b_cat>=0) -> i.br90
-benruc_pad90[i.br90,] -> br90
-netgap(br90) -> br90.g
-cbind(rep('br90', dim(br90.g)[1]), br90.g) -> br90.gap
-names(br90.gap) <- c('net', 'gap', 'area')
-br90.gap
+which(benruc_pad42$b_cat>=0) -> i.brpine
+benruc_pad42[i.brpine,] -> brpine
+netgap(brpine) -> brpine.g
+cbind(rep('brpine', dim(brpine.g)[1]), brpine.g) -> brpine.gap
+names(brpine.gap) <- c('net', 'gap', 'area')
+brpine.gap
+brpine.gap$gap <- c(1,2,3,4,4)
 
 # "benruc_pad41424390", 
 which(benruc_pad41424390$b_cat>=0) -> i.brnbat
@@ -222,59 +223,226 @@ cunbat.gap
 cunbat.gap$gap <- c(1,2,3,4,4)
 
 # "cwdp_pad52",
+which(cwdp_pad52$b_cat>=0) -> i.dug
+cwdp_pad52[i.dug,] -> dug
+netgap(dug) -> dug.g
+cbind(rep('dug', dim(dug.g)[1]), dug.g) -> dug.gap
+names(dug.gap) <- c('net', 'gap', 'area')
+dug.gap
+dug.gap$gap <- c(1,2,3,4,4)
 
 #  "dix_pad41424390",
+which(dix_pad41424390$b_cat>=0) -> i.dnbat
+dix_pad41424390[i.dnbat,] -> dnbat
+netgap(dnbat) -> dnbat.g
+cbind(rep('dnbat', dim(dnbat.g)[1]), dnbat.g) -> dnbat.gap
+names(dnbat.gap) <- c('net', 'gap', 'area')
+dnbat.gap
+dnbat.gap$gap <- c(1,2,3,4,4)
 
 #  "fb_pad42", 
+which(fb_pad42$b_cat>=0) -> i.fbpine
+fb_pad42[i.fbpine,] -> fbpine
+netgap(fbpine) -> fbpine.g
+cbind(rep('fbpine', dim(fbpine.g)[1]), fbpine.g) -> fbpine.gap
+names(fbpine.gap) <- c('net', 'gap', 'area')
+fbpine.gap
+fbpine.gap$gap <- c(1,2,3,4,4)
 
 # "fb_pad41424390", 
+which(fb_pad41424390$b_cat>=0) -> i.fbnbat
+fb_pad41424390[i.fbnbat,] -> fbnbat
+netgap(fbnbat) -> fbnbat.g
+cbind(rep('fbnbat', dim(fbnbat.g)[1]), fbnbat.g) -> fbnbat.gap
+names(fbnbat.gap) <- c('net', 'gap', 'area')
+fbnbat.gap
+fbnbat.gap$gap <- c(1,2,3,4,4)
 
 # "fccg_pad414271", 
+which(fccg_pad414271$b_cat>=0) -> i.fcbeet
+fccg_pad414271[i.fcbeet,] -> fcbeet
+netgap(fcbeet) -> fcbeet.g
+cbind(rep('cgbeet', dim(fcbeet.g)[1]), fcbeet.g) -> fcbeet.gap
+names(fcbeet.gap) <- c('net', 'gap', 'area')
+fcbeet.gap
+fcbeet.gap$gap <- c(1,2,3,4,4)
 
 # "fccg_pad41424390",
+which(fccg_pad41424390$b_cat>=0) -> i.cgnbat
+fccg_pad41424390[i.cgnbat,] -> cgnbat
+netgap(cgnbat) -> cgnbat.g
+cbind(rep('cgnbat', dim(cgnbat.g)[1]), cgnbat.g) -> cgnbat.gap
+names(cgnbat.gap) <- c('net', 'gap', 'area')
+cgnbat.gap
+cgnbat.gap$gap <- c(1,2,3,4,4)
 
 # "fccg_pad31",
+which(fccg_pad31$b_cat>=0) -> i.fcgeo
+fccg_pad31[i.fcgeo,] -> fcgeo
+netgap(fcgeo) -> fcgeo.g
+cbind(rep('fcgeo', dim(fcgeo.g)[1]), fcgeo.g) -> fcgeo.gap
+names(fcgeo.gap) <- c('net', 'gap', 'area')
+fcgeo.gap
+fcgeo.gap$gap <- c(1,2,3,4,4)
 
 #  "fcpc_pad42", 
+which(fcpc_pad42$b_cat>=0) -> i.fcmso
+fcpc_pad42[i.fcmso,] -> fcmso
+netgap(fcmso) -> fcmso.g
+cbind(rep('fcmso', dim(fcmso.g)[1]), fcmso.g) -> fcmso.gap
+names(fcmso.gap) <- c('net', 'gap', 'area')
+fcmso.gap
+fcmso.gap$gap <- c(1,2,3,4,4)
 
 # "fd_pad414390", 
+which(fd_pad414390$b_cat>=0) -> i.fdibat
+fd_pad414390[i.fdibat,] -> fdibat
+netgap(fdibat) -> fdibat.g
+cbind(rep('fdibat', dim(fdibat.g)[1]), fdibat.g) -> fdibat.gap
+names(fdibat.gap) <- c('net', 'gap', 'area')
+fdibat.gap
+fdibat.gap$gap <- c(1,2,3,4,4)
 
 # "fd_pad41424390",
+which(fd_pad41424390$b_cat>=0) -> i.fdnbat
+fd_pad41424390[i.fdnbat,] -> fdnbat
+netgap(fdnbat) -> fdnbat.g
+cbind(rep('fdnbat', dim(fdnbat.g)[1]), fdnbat.g) -> fdnbat.gap
+names(fdnbat.gap) <- c('net', 'gap', 'area')
+fdnbat.gap
+fdnbat.gap$gap <- c(1,2,3,4,4)
 
 #  "gray_pad42", 
+which(gray_pad42$b_cat>=0) -> i.gpine
+gray_pad42[i.gpine,] -> gpine
+netgap(gpine) -> gpine.g
+cbind(rep('gpine', dim(gpine.g)[1]), gpine.g) -> gpine.gap
+names(gpine.gap) <- c('net', 'gap', 'area')
+gpine.gap
+gpine.gap$gap <- c(1,2,3,4,4)
 
 # "gray_pad41424390", 
+which(gray_pad41424390$b_cat>=0) -> i.gnbat
+gray_pad41424390[i.gnbat,] -> gnbat
+netgap(gnbat) -> gnbat.g
+cbind(rep('gnbat', dim(gnbat.g)[1]), gnbat.g) -> gnbat.gap
+names(gnbat.gap) <- c('net', 'gap', 'area')
+gnbat.gap
+gnbat.gap$gap <- c(1,2,3,4,4)
 
 # "hlcrslo_pad71", 
+which(hlcrslo_pad71$b_cat>=0) -> i.cali71
+hlcrslo_pad71[i.cali71,] -> cali71
+netgap(cali71) -> cali71.g
+cbind(rep('cali71', dim(cali71.g)[1]), cali71.g) -> cali71.gap
+names(cali71.gap) <- c('net', 'gap', 'area')
+cali71.gap
+cali71.gap$gap <- c(1,2,3,4,4)
 
 # "hlcrslo_pad52", 
+which(hlcrslo_pad52$b_cat>=0) -> i.cshrub
+hlcrslo_pad52[i.cshrub,] -> cshrub
+netgap(cshrub) -> cshrub.g
+cbind(rep('cshrub', dim(cshrub.g)[1]), cshrub.g) -> cshrub.gap
+names(cshrub.gap) <- c('net', 'gap', 'area')
+cshrub.gap
+cshrub.gap$gap <- c(1,2,3,4,4)
 
 # "hlcrslo_pad43", 
+which(hlcrslo_pad43$b_cat>=0) -> i.camix
+hlcrslo_pad43[i.camix,] -> camix
+netgap(camix) -> camix.g
+cbind(rep('camix', dim(camix.g)[1]), camix.g) -> camix.gap
+names(camix.gap) <- c('net', 'gap', 'area')
+camix.gap
+camix.gap$gap <- c(1,2,3,4,4)
 
 # "jblmcr_pad71", 
+which(jblmcr_pad71$b_cat>=0) -> i.jgras
+jblmcr_pad71[i.jgras,] -> jgras
+netgap(jgras) -> jgras.g
+cbind(rep('jgras', dim(jgras.g)[1]), jgras.g) -> jgras.gap
+names(jgras.gap) <- c('net', 'gap', 'area')
+jgras.gap
+jgras.gap$gap <- c(1,2,3,4,4)
 
 # "jblmcr_pad42", 
+which(jblmcr_pad42$b_cat>=0) -> i.jpine
+jblmcr_pad42[i.jpine,] -> jpine
+netgap(jpine) -> jpine.g
+cbind(rep('jpine', dim(jpine.g)[1]), jpine.g) -> jpine.gap
+names(jpine.gap) <- c('net', 'gap', 'area')
+jpine.gap
+jpine.gap$gap <- c(1,2,3,4,4)
 
 # "knox_pad43", 
+which(knox_pad43$b_cat>=0) -> i.kmix
+knox_pad43[i.kmix,] -> kmix
+netgap(kmix) -> kmix.g
+cbind(rep('kmix', dim(kmix.g)[1]), kmix.g) -> kmix.gap
+names(kmix.gap) <- c('net', 'gap', 'area')
+kmix.gap
+kmix.gap$gap <- c(1,2,3,4,4)
 
 # "knox_pad414390", 
+which(knox_pad414390$b_cat>=0) -> i.kibat
+knox_pad414390[i.kibat,] -> kibat
+netgap(kibat) -> kibat.g
+cbind(rep('kibat', dim(kibat.g)[1]), kibat.g) -> kibat.gap
+names(kibat.gap) <- c('net', 'gap', 'area')
+kibat.gap
+kibat.gap$gap <- c(1,2,3,4,4)
 
 # "knox_pad41424390", 
+which(knox_pad41424390$b_cat>=0) -> i.knbat
+knox_pad41424390[i.knbat,] -> knbat
+netgap(knbat) -> knbat.g
+cbind(rep('knbat', dim(knbat.g)[1]), knbat.g) -> knbat.gap
+names(knbat.gap) <- c('net', 'gap', 'area')
+knbat.gap
+knbat.gap$gap <- c(1,2,3,4,4)
 
 # "macon_pad414390", 
+which(macon_pad414390$b_cat>=0) -> i.mibat
+macon_pad414390[i.mibat,] -> mibat
+netgap(mibat) -> mibat.g
+cbind(rep('mibat', dim(mibat.g)[1]), mibat.g) -> mibat.gap
+names(mibat.gap) <- c('net', 'gap', 'area')
+mibat.gap
+mibat.gap$gap <- c(1,2,3,4,4)
 
 # "west_pad414390
+which(west_pad414390$b_cat>=0) -> i.wpibat
+west_pad414390[i.wpibat,] -> wpibat
+netgap(wpibat) -> wpibat.g
+cbind(rep('wpibat', dim(wpibat.g)[1]), wpibat.g) -> wpibat.gap
+names(wpibat.gap) <- c('net', 'gap', 'area')
+wpibat.gap
+wpibat.gap$gap <- c(1,2,3,4,4)
 
 
 
 ###############
-# bundle data
+# bundle terrestrial data
+rbind(anbat.gap, bldec.gap, blp52.gap, blp71.gap, blp95.gap, blpine.gap, br90.gap, brnbat.gap, caibat.gap, cali71.gap, camix.gap, canbat.gap,
+       cddec.gap, cdibat.gap, cdnbat.gap, cenbat.gap, cgnbat.gap, cmdec.gap, cmmix.gap, cmnbat.gap, cnpine.gap, cshrub.gap, cunbat.gap, dnbat.gap, 
+       dug.gap, fbnbat.gap, fbpine.gap, fcbeet.gap, fcgeo.gap, fcmso.gap, fdibat.gap, fdnbat.gap, gnbat.gap, gpine.gap, jgras.gap, jpine.gap,  
+       kibat.gap, kmix.gap, knbat.gap, mibat.gap, wpibat.gap) -> dter_net_gap
+load('./data/lter_netgap.rda')
+rbind(dter_net_gap, lter_netgap) -> tnets_gap
 
 # melt & cast
+melt(tnets_gap, id=c("net", "gap")) -> tgap.melt
+cast(tgap.melt, net~gap, sum) -> cast.tgap
 
-# function for gap score
+gaptot <- function(mat){
+  out1 <- mat[1]*4+mat[2]*3+mat[3]*2+mat[4]
+  out2 <- sum(mat)*4
+  out <- out1/out2
+  return(out)
+}
+apply(cast.tgap,1, gaptot) -> t.gscore
 
-# calc gap score
-
-# load aquatic nets
-load('./data/aq_gs.rda')
+# write output files
+write.csv(t.gscore, "tnet_gap.csv")
+write.csv(aq.gscore, "anet_gap.csv")
